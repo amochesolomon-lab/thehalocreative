@@ -1,10 +1,15 @@
+import { useEffect } from 'react';
 import Reveal from '../components/Reveal';
 import PageHeader from '../components/PageHeader';
 import { aboutHighlights, portrait, tools } from '../data/siteData';
 
 export default function About() {
+  useEffect(() => {
+    document.title = "About | Sol'o Mon";
+  }, []);
+
   return (
-    <>
+    <div className="page-container about-page">
       <PageHeader
         eyebrow="Who I Am"
         title="About"
@@ -12,10 +17,12 @@ export default function About() {
       />
       <section className="page-split">
         <Reveal className="page-media">
-          <img src={portrait} alt="Sol'o Mon portrait" />
+          <div className="portrait-wrapper">
+            <img src={portrait} alt="Sol'o Mon portrait" />
+          </div>
         </Reveal>
         <div className="page-copy">
-          {aboutHighlights.map((line) => (
+          {aboutHighlights && aboutHighlights.map((line) => (
             <Reveal key={line}>
               <p>{line}</p>
             </Reveal>
@@ -24,14 +31,14 @@ export default function About() {
             <div className="list-block">
               <p className="eyebrow">Tools & Skills</p>
               <div className="inline-list">
-                {tools.map((tool) => (
-                  <span key={tool}>{tool}</span>
+                {tools && tools.map((tool) => (
+                  <span key={tool} className="skill-tag">{tool}</span>
                 ))}
               </div>
             </div>
           </Reveal>
         </div>
       </section>
-    </>
+    </div>
   );
 }

@@ -3,6 +3,7 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { Outlet, useLocation } from 'react-router-dom';
 import Nav from './Nav';
 import Footer from './Footer';
+import AudioPlayer from './AudioPlayer';
 
 export default function Layout() {
   const location = useLocation();
@@ -35,28 +36,30 @@ export default function Layout() {
 
   return (
     <div className={`app-shell ${scrolled ? 'is-scrolled' : ''}`}>
-      <div className="ambient ambient-a" aria-hidden="true" />
-      <div className="ambient ambient-b" aria-hidden="true" />
-      <div className="ambient ambient-c" aria-hidden="true" />
       <div className="noise" aria-hidden="true" />
       <div className="scroll-bar" aria-hidden="true" style={{ transform: `scaleX(${progress})` }} />
+      
+      {/* Navigation Header */}
       <Nav />
+      
+      {/* Page Content with Router Outlets and Page Transitions */}
       <AnimatePresence mode="wait" initial={false}>
         <motion.main
           key={location.pathname}
           className="site-main"
-          initial={reducedMotion ? false : { opacity: 0, y: 18 }}
-          animate={reducedMotion ? undefined : { opacity: 1, y: 0 }}
-          exit={reducedMotion ? undefined : { opacity: 0, y: -18 }}
+          initial={reducedMotion ? false : { opacity: 0, scale: 0.99, y: 8 }}
+          animate={reducedMotion ? undefined : { opacity: 1, scale: 1, y: 0 }}
+          exit={reducedMotion ? undefined : { opacity: 0, scale: 1.01, y: -8 }}
           transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
         >
           <Outlet />
         </motion.main>
       </AnimatePresence>
+
+      {/* Footer Content */}
       <Footer />
-      <a className="quick-contact" href="https://wa.link/wctpny" target="_blank" rel="noreferrer">
-        Chat
-      </a>
+      
+      {/* Back to Top Trigger */}
       <button
         className={`back-to-top ${showTop ? 'visible' : ''}`}
         type="button"
@@ -65,6 +68,9 @@ export default function Layout() {
       >
         ↑
       </button>
+
+      {/* Ambient Audio Player */}
+      <AudioPlayer />
     </div>
   );
 }

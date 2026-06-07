@@ -1,26 +1,45 @@
-import { socialLinks, site } from '../data/siteData';
+import { site } from "../data/siteData";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="site-footer">
-      <div>
-        <p className="footer-label">Contact</p>
-        <a href={site.whatsapp} target="_blank" rel="noreferrer" className="footer-link">
-          WhatsApp
+      <div className="footer-left">
+        <p className="footer-label">Connect</p>
+        <div className="footer-socials">
+          <a href="https://wa.link/wctpny" target="_blank" rel="noreferrer">
+            WhatApp
+          </a>
+          <a href={site.spotify} target="_blank" rel="noreferrer">
+            Spotify
+          </a>
+          <a href={site.instagram} target="_blank" rel="noreferrer">
+            Instagram
+          </a>
+          <a href={site.twitter} target="_blank" rel="noreferrer">
+            Twitter
+          </a>
+          <a href={site.facebook} target="_blank" rel="noreferrer">
+            Facebook
+          </a>
+          <a href={site.threads} target="_blank" rel="noreferrer">
+            Threads
+          </a>
+        </div>
+      </div>
+      <div className="footer-right">
+        <p className="footer-label">Enquiries</p>
+        <a href={`mailto:${site.email}`} className="footer-link">
+          {site.email}
         </a>
       </div>
-      <div>
-        <p className="footer-label">Location</p>
-        <span className="footer-copy">{site.location}</span>
+      <div className="footer-meta">
+        <span>
+          Copyright © {currentYear} {site.name}. All Rights Reserved.
+        </span>
+        <span>creative / curious</span>
       </div>
-      <div className="footer-socials">
-        {socialLinks.map((link) => (
-          <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
-            {link.label}
-          </a>
-        ))}
-      </div>
-      <p className="footer-meta">Copyright © 2026. All Rights Reserved.</p>
     </footer>
   );
 }
