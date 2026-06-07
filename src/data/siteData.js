@@ -21,9 +21,10 @@ export const site = {
 export const portrait = "/assets/pics/20260502_012722 (Copy) (Edited).jpg";
 
 export const aboutHighlights = [
-  "Sol'o Mon is a visionary designer and creative director based in Nigeria, specializing in high-impact visual identity and digital experiences.",
-  "With a background in Professional Graphic design and Cinematography, he bridges the gap between raw creativity and digital implementation.",
-  "His work is defined by an atmospheric, creative, soulful aesthetic that resonates across music, branding, and visuals.",
+  "Sol’o mon Abidu works at the intersection of design and systems thinking, building visual identities and digital experiences that feel intentional, modern, and structured. Operating as The Seraphic Designer, he blends graphic design, branding, and front-end development into a single creative practice focused on clarity and impact.",
+  "His work spans brand identity systems, campaign visuals, and emerging web interfaces, with a strong preference for minimal, bold composition and emotionally grounded storytelling. Rather than treating design as decoration, he approaches it as structure where typography, spacing, and motion carry meaning as much as imagery does.",
+  "Beyond visuals, he is actively expanding into full-stack development and interactive products, building tools and platforms that extend his design thinking into functional systems. Projects like personal portfolios, learning platforms, and experimental web experiences reflect a growing focus on combining aesthetics with usability.",
+  "His direction is clear: build work that is visually refined, technically solid, and purpose-driven—design that doesn’t just look good, but holds intent, structure, and longevity.",
 ];
 
 export const tools = [
