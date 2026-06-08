@@ -608,7 +608,7 @@ button, input, textarea {
   margin: 0 auto;
   padding: 0 50px 80px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 40px;
 }
 
@@ -698,8 +698,9 @@ button, input, textarea {
 
 @media (max-width: 768px) {
   .music-grid {
-    padding: 0 30px 60px;
-    gap: 30px;
+    padding: 0 20px 40px;
+    gap: 20px;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -978,12 +979,12 @@ button, input, textarea {
   .newsletter-split-layout,
   .contact-split-layout {
     grid-template-columns: 1fr;
-    gap: 60px;
-    padding: 0 30px 60px;
+    gap: 40px;
+    padding: 0 20px 40px;
   }
   
   .form-card {
-    padding: 30px;
+    padding: 20px;
   }
 }
 
