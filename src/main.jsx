@@ -5,14 +5,15 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import App from './App';
 import './styles.css';
+import { AudioProvider } from './components/AudioContext';
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <AudioProvider>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </AudioProvider>
 );

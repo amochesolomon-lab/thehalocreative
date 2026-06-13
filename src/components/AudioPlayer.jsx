@@ -1,66 +1,10 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import { Play, Pause, SkipForward, Volume2, VolumeX, Music } from 'lucide-react';
-import { previewTracks } from '../data/siteData';
+import { useAudio } from './AudioContext';
 
 export default function AudioPlayer() {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-  const [muted, setMuted] = useState(false);
+  const { isPlaying, currentTrack, togglePlay, handleNext, muted, toggleMute } = useAudio();
   const [expanded, setExpanded] = useState(false);
-  const audioRef = useRef(null);
-
-  const currentTrack = previewTracks[currentTrackIndex];
-
-  // Initialize audio object once
-  useEffect(() => {
-    audioRef.current = new Audio(currentTrack.src);
-    audioRef.current.loop = true;
-    audioRef.current.volume = 0.5;
-
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause();
-      }
-    };
-  }, []);
-
-  // Update audio source when track changes
-  useEffect(() => {
-    if (!audioRef.current) return;
-    
-    const wasPlaying = isPlaying;
-    audioRef.current.pause();
-    audioRef.current.src = currentTrack.src;
-    
-    if (wasPlaying) {
-      audioRef.current.play().catch(err => console.log("Audio play failed:", err));
-    }
-  }, [currentTrackIndex]);
-
-  // Handle Play/Pause
-  const togglePlay = () => {
-    if (!audioRef.current) return;
-    if (isPlaying) {
-      audioRef.current.pause();
-      setIsPlaying(false);
-    } else {
-      audioRef.current.play()
-        .then(() => setIsPlaying(true))
-        .catch(err => console.log("Audio play failed:", err));
-    }
-  };
-
-  // Handle skip
-  const handleNext = () => {
-    setCurrentTrackIndex((prev) => (prev + 1) % previewTracks.length);
-  };
-
-  // Handle mute
-  const toggleMute = () => {
-    if (!audioRef.current) return;
-    audioRef.current.muted = !muted;
-    setMuted(!muted);
-  };
 
   return (
     <div className={`audio-player-widget ${expanded ? 'expanded' : 'collapsed'}`}>

@@ -66,19 +66,29 @@ export const videos = [];
 // Ambient preview music tracks for the visual player widget
 export const previewTracks = [
   {
-    title: "Iyo",
-    album: "Prinx Emmanuel",
-    src: "/assets/sounds/Prinx Emmanuel - Iyo (Lyrics video)(MP3_320K).mp3",
+    title: "Rebel",
+    album: "Anendlessocean",
+    src: "/assets/sounds/Anendlessocean - Rebel (LIAM)(MP3_320K).mp3",
   },
   {
-    title: "Make you feel my love",
+    title: "Easy to Love",
     album: "Anendlessocean",
-    src: "/assets/sounds/Anendlessocean - Make you feel my love(MP3_320K).mp3",
+    src: "/assets/sounds/Anendlessocean - Easy To Love  (LIAM)(MP3_320K).mp3",
+  },
+  {
+    title: "Orlando",
+    album: "Anendlessocean",
+    src: "/assets/sounds/Anendlessocean - Orlando (LIAM)(MP3_320K).mp3",
   },
   {
     title: "Head 2 Core",
     album: "Anendlessocean",
     src: "/assets/sounds/Anendlessocean_-_Head_2_Core_CeeNaija.com_.mp3",
+  },
+  {
+    title: "Make you feel my love",
+    album: "Anendlessocean",
+    src: "/assets/sounds/Anendlessocean - Make you feel my love(MP3_320K).mp3",
   },
   {
     title: "Honey I Love You",
@@ -96,6 +106,11 @@ export const previewTracks = [
     src: "/assets/sounds/Anendlessocean-ZA-(CeeNaija.com).mp3",
   },
   {
+    title: "Never Left My Side",
+    album: "Forrest Frank",
+    src: "/assets/sounds/Forrest_Frank_-_Never_Left_My_Side_CeeNaija.com_.mp3",
+  },
+  {
     title: "Greatest",
     album: "CalledOut Music",
     src: "/assets/sounds/CalledOut Music - Greatest [Live Performance Video](MP3_160K).mp3",
@@ -109,11 +124,6 @@ export const previewTracks = [
     title: "Superpowers",
     album: "Daniel Caesar",
     src: "/assets/sounds/Daniel Caesar - Superpowers (Official Audio)(MP3_320K).mp3",
-  },
-  {
-    title: "Never Left My Side",
-    album: "Forrest Frank",
-    src: "/assets/sounds/Forrest_Frank_-_Never_Left_My_Side_CeeNaija.com_.mp3",
   },
   {
     title: "Wiseman",

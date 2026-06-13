@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import { homeSlides } from "../data/siteData";
 
 export default function Home() {
@@ -46,10 +47,10 @@ export default function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <a href="/about" className="home-hover-link">
+          <Link to="/about" className="home-hover-link">
             <span className="subtitle">the story behind</span>
             <h2 className="title">SOL'O MON</h2>
-          </a>
+          </Link>
         </motion.div>
 
         {/* Right Link - Catalogue */}
@@ -59,10 +60,10 @@ export default function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
         >
-          <a href="/catalogue" className="home-hover-link">
+          <Link to="/catalogue" className="home-hover-link">
             <span className="subtitle">projects</span>
             <h2 className="title">See Works</h2>
-          </a>
+          </Link>
         </motion.div>
       </div>
 

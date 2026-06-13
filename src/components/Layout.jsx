@@ -3,7 +3,6 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { Outlet, useLocation } from 'react-router-dom';
 import Nav from './Nav';
 import Footer from './Footer';
-import AudioPlayer from './AudioPlayer';
 
 export default function Layout() {
   const location = useLocation();
@@ -68,9 +67,6 @@ export default function Layout() {
       >
         ↑
       </button>
-
-      {/* Ambient Audio Player */}
-      <AudioPlayer />
     </div>
   );
 }
