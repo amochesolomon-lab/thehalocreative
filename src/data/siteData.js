@@ -81,9 +81,9 @@ export const previewTracks = [
     src: "/assets/sounds/Anendlessocean - Orlando (LIAM)(MP3_320K).mp3",
   },
   {
-    title: "Head 2 Core",
-    album: "Anendlessocean",
-    src: "/assets/sounds/Anendlessocean_-_Head_2_Core_CeeNaija.com_.mp3",
+    title: "Iyo",
+    album: "Prinx Emmanuel",
+    src: "/assets/sounds/Prinx Emmanuel - Iyo (Lyrics video)(MP3_320K).mp3",
   },
   {
     title: "Make you feel my love",
