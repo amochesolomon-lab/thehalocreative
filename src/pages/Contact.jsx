@@ -15,14 +15,29 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+    try {
+      const response = await fetch("https://formspree.io/f/mqeoodlv", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        }
+      });
+      if (response.ok) {
+        setSuccess(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        alert("Failed to send message. Please try again later.");
+      }
+    } catch (error) {
+      alert("An error occurred. Please try again later.");
+    } finally {
       setLoading(false);
-      setSuccess(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 1200);
+    }
   };
 
   return (

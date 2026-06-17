@@ -2,7 +2,7 @@ export const site = {
   name: "Sol'o Mon",
   title: "Official Site",
   location: "Nigeria",
-  email: "theseraphicdesigner@gmail.com",
+  email: "theseraphicd3signer@gmail.com",
   bookingEmail: "amochesolomon@gmail.com",
   intro:
     "Sol'o Mon is a contemporary artist crafting soulful, atmospheric experiences.",
