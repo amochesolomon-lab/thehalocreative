@@ -31,7 +31,6 @@ export const tools = [
   "Photoshop",
   "Affinity",
   "HTML/CSS",
-  "Dart/Flutter",
   "React",
   "JavaScript",
 ];
