@@ -188,12 +188,12 @@ export const signalSections = [
   {
     id: "brand-stories",
     title: "Brand Stories",
-    description: "Deep dives into visual identity systems, branding philosophy, and case studies of projects built with intention."
+    description: "Deep dives into visual identity systems, branding philosophy, and case studies of projects i built with intention."
   },
   {
     id: "creative-essays",
     title: "Creative Essays",
-    description: "Thoughtful explorations of design principles, creative process, and the intersection of art and technology."
+    description: "Thoughtful explorations of design principles, my creative process, and the intersection of art and technology."
   },
   {
     id: "dev-notes",
@@ -203,7 +203,7 @@ export const signalSections = [
   {
     id: "ai-workflows",
     title: "AI Workflows",
-    description: "Experiments with AI tools, creative prompting strategies, and how AI amplifies the design process."
+    description: "Experiments with AI tools, creative prompting strategies, and how AI amplifies my design process."
   },
   {
     id: "studio-updates",

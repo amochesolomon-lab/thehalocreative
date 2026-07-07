@@ -58,10 +58,10 @@ export default function Signal() {
             <div className="signal-divider" />
             
             <p className="signal-why-text">
-              The Creative Signal exists to document ideas, process, experiments and creative growth. 
+              The Creative Signal exists to document my ideas, processes, experiments and my creative growth. 
               Rather than chasing trends or optimizing for algorithms, this publication prioritizes 
               authenticity and intentionality. Each issue explores real thinking, real workflows, and 
-              real lessons learned while building brands and digital experiences.
+              real lessons i learned while building brands and digital experiences.
             </p>
           </div>
         </Reveal>
