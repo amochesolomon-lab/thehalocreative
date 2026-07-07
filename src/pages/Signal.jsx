@@ -130,7 +130,7 @@ export default function Signal() {
                   transition={{ duration: 0.3 }}
                   onClick={() => alert('Issue coming soon')}
                 >
-                  Read Issue
+                  There's more in the Signal
                 </motion.button>
               </div>
             </div>
@@ -144,7 +144,7 @@ export default function Signal() {
           <div className="signal-external-wrapper">
             <h2 className="signal-external-title">Read all issues</h2>
             <p className="signal-external-desc">
-              Visit The Creative Signal website to explore all published issues and archive.
+              Visit The Creative Signal website to explore all published issues and archive, Every Sunday, 10AM.
             </p>
             <a 
               href="PLACEHOLDER_EXTERNAL_URL" 
