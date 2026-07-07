@@ -18,7 +18,7 @@ export const site = {
   threads: "https://www.threads.com/@theseraphicdesigner",
 };
 
-export const portrait = "/assets/pics/20260502_012722 (Copy) (Edited).jpg";
+export const portrait = "/assets/pics/IMG_1612.jpg";
 
 export const aboutHighlights = [
   "Sol’o mon Abidu works at the intersection of design and systems thinking, building visual identities and digital experiences that feel intentional, modern, and structured. Operating as The Seraphic Designer, he blends graphic design, branding, and front-end development into a single creative practice focused on clarity and impact.",
@@ -39,6 +39,7 @@ export const navigation = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/catalogue", label: "Catalogue" },
+  { to: "/signal", label: "The Creative Signal"},
   { to: "/contact", label: "Contact", cta: true },
 ];
 
@@ -175,3 +176,78 @@ export const previewTracks = [
     src: "/assets/sounds/Sinners(MP3_320K).mp3",
   },
 ];
+
+// The Creative Signal Editorial Data
+export const signalConfig = {
+  title: "The Creative Signal",
+  subtitle: "Ideas at the intersection of design, technology and intentional creativity.",
+  description: "A curated publication exploring branding, web development, AI, creative systems and the thinking behind my work.",
+};
+
+export const signalSections = [
+  {
+    id: "brand-stories",
+    title: "Brand Stories",
+    description: "Deep dives into visual identity systems, branding philosophy, and case studies of projects built with intention."
+  },
+  {
+    id: "creative-essays",
+    title: "Creative Essays",
+    description: "Thoughtful explorations of design principles, creative process, and the intersection of art and technology."
+  },
+  {
+    id: "dev-notes",
+    title: "Development Notes",
+    description: "Technical insights, frontend patterns, and lessons learned while building interactive web experiences."
+  },
+  {
+    id: "ai-workflows",
+    title: "AI Workflows",
+    description: "Experiments with AI tools, creative prompting strategies, and how AI amplifies the design process."
+  },
+  {
+    id: "studio-updates",
+    title: "Studio Updates",
+    description: "Behind-the-scenes glimpses, project updates, and reflections on creative growth and systems thinking."
+  }
+];
+
+export const signalIssues = [
+  {
+    id: "001",
+    number: "001",
+    title: "The Foundation: Why I Started Documenting My Thinking",
+    date: "2025-02-01",
+    category: "Studio Updates",
+    featured: true,
+    content: `
+This is the first issue of The Creative Signal. 
+
+You can edit this markdown content directly in **siteData.js** to add:
+- Formatted text with **bold** and *italic*
+- Lists and structured information
+- Multiple paragraphs
+- Any markdown you'd like
+
+Simply replace this placeholder content with your own writing. The content will automatically render on the page with clean, editorial styling that matches the rest of your portfolio.
+    `.trim()
+  },
+  {
+    id: "002",
+    number: "002",
+    title: "Monochrome Systems: Building Visual Hierarchies Without Color",
+    excerpt: "How constraints drive better design decisions. A case study in minimal branding and the power of typography.",
+    date: "2025-01-15",
+    category: "Brand Stories"
+  },
+  {
+    id: "003",
+    number: "003",
+    title: "React Patterns for Intentional Animation",
+    excerpt: "Using Framer Motion and GSAP to create subtle, purposeful motion that serves the narrative.",
+    date: "2025-01-01",
+    category: "Development Notes"
+  }
+];
+
+// Extended articles list for the articles page

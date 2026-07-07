@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Catalogue from './pages/Catalogue';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Signal from './pages/Signal';
 import SmoothScroll from './components/SmoothScroll';
 import AudioPlayer from './components/AudioPlayer';
 
@@ -17,6 +18,7 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="/catalogue" element={<Catalogue />} />
             <Route path="/about" element={<About />} />
+            <Route path="/signal" element={<Signal />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>

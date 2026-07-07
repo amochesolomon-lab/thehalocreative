@@ -58,15 +58,19 @@ export default function Nav() {
       <div ref={drawerRef} className={`nav-drawer ${open ? "open" : ""}`}>
         <nav id="primary-menu" className="nav-links" aria-label="Primary">
           {navigation.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              className={({ isActive }) =>
-                `nav-link ${item.cta ? "cta" : ""} ${isActive ? "active" : ""}`.trim()
-              }
-            >
-              {item.label}
-            </NavLink>
+            <div key={item.to} className="nav-link-wrapper">
+              <NavLink
+                to={item.to}
+                className={({ isActive }) =>
+                  `nav-link ${item.cta ? "cta" : ""} ${isActive ? "active" : ""}`.trim()
+                }
+              >
+                {item.label}
+              </NavLink>
+              {item.to === "/signal" && (
+                <span className="nav-badge">NEW</span>
+              )}
+            </div>
           ))}
         </nav>
         <div className="nav-meta">
