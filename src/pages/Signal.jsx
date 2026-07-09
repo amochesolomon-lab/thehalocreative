@@ -147,7 +147,7 @@ export default function Signal() {
               Visit The Creative Signal website to explore all published issues and archive, Every Sunday, 10AM.
             </p>
             <a 
-              href="PLACEHOLDER_EXTERNAL_URL" 
+              href="https://thecreativesignal.vercel.app/" 
               target="_blank" 
               rel="noreferrer"
               className="signal-external-link-btn"
