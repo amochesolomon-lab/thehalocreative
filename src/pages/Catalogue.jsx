@@ -6,22 +6,22 @@ import Reveal from "../components/Reveal";
 const categories = [
   {
     title: "Event Designs",
-    image: "/assets/Church/FESTIVAL OF WORSHIP full.png",
+    image: "/assets/Church/FESTIVAL OF WORSHIP full.webp",
     link: "https://solomon83.pixieset.com/eventflyers/",
   },
   {
     title: "Birthday Designs",
-    image: "/assets/birthday/Mummy Happi.png",
+    image: "/assets/birthday/Mummy Happi.webp",
     link: "https://solomon83.pixieset.com/birthdaydesigns/",
   },
   {
     title: "Social Media Designs",
-    image: "/assets/Social-media/21 Days TFPCPR.png",
+    image: "/assets/Social-media/21 Days TFPCPR.webp",
     link: "https://solomon83.pixieset.com/socialmedia/",
   },
   {
     title: "Branding Designs",
-    image: "/assets/wealthspring/Wealthspring ad 5.png",
+    image: "/assets/wealthspring/Wealthspring ad 5.webp",
     link: "https://solomon83.pixieset.com/brandingprojects/",
   },
 ];

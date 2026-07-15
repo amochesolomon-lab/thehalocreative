@@ -44,18 +44,18 @@ export const navigation = [
 ];
 
 export const homeSlides = [
-  "/assets/pics/IMG_1612.jpg",
-  "/assets/pics/IMG_1605.jpg",
-  "/assets/pics/20260308_122711.jpg",
-  "/assets/pics/20260308_123712.jpg",
-  "/assets/pics/20260308_123853.jpg",
-  "/assets/pics/Solo.jpg",
-  "/assets/pics/IMG_1589.jpg",
-  "/assets/pics/IMG_1587.jpg",
-  "/assets/pics/IMG_1607.jpg",
-  "/assets/pics/file_00000000f26c720a9b1c0415386e9786.jpg",
-  "/assets/pics/SAVE_20260111_215257.jpg",
-  "/assets/pics/20251223_085232.jpg",
+  "/assets/pics/IMG_1612.webp",
+  "/assets/pics/IMG_1605.webp",
+  "/assets/pics/20260308_122711.webp",
+  "/assets/pics/20260308_123712.webp",
+  "/assets/pics/20260308_123853.webp",
+  "/assets/pics/Solo.webp",
+  "/assets/pics/IMG_1589.webp",
+  "/assets/pics/IMG_1587.webp",
+  "/assets/pics/IMG_1607.webp",
+  "/assets/pics/file_00000000f26c720a9b1c0415386e9786.webp",
+  "/assets/pics/SAVE_20260111_215257.webp",
+  "/assets/pics/20251223_085232.webp",
   "/assets/pics/logo.png",
 ];
 

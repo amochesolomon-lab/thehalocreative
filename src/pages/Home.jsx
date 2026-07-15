@@ -7,7 +7,7 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    document.title = "Home | Sol'o Mon";
+    document.title = "Sol'o Mon";
   }, []);
 
   // Cycle background slides every 8 seconds
