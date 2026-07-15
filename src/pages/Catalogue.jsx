@@ -24,6 +24,21 @@ const categories = [
     image: "/assets/wealthspring/Wealthspring ad 5.webp",
     link: "https://solomon83.pixieset.com/brandingprojects/",
   },
+  {
+    title: "Wealthspring Properties Website",
+    image: "/assets/websitescreenshts/Screenshot_20260715_103008.webp",
+    link: "https://wealthspring.vercel.app/",
+  },
+  {
+    title: "YVN Academy Website",
+    image: "/assets/websitescreenshts/Screenshot_20260715_103134.webp",
+    link: "https://yvnacademy.vercel.app/",
+  },
+  {
+    title: "The Creative Signal",
+    image: "/assets/websitescreenshts/Screenshot_20260715_103055.webp",
+    link: "https://thecreativesignal.vercel.app/",
+  },
 ];
 
 export default function Catalogue() {
