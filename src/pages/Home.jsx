@@ -74,8 +74,8 @@ export default function Home() {
           transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
           <Link to="/signal" className="home-hover-link">
-            <span className="subtitle">editorial</span>
-            <h2 className="title">The Creative Signal</h2>
+            <span className="subtitle"></span>
+            <h2 className="title"></h2>
           </Link>
         </motion.div>
       </div>
