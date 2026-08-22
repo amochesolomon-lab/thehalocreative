@@ -91,6 +91,10 @@ button, input, textarea {
   z-index: 2;
 }
 
+.route-loading {
+  min-height: 50vh;
+}
+
 /* Noise texture */
 .noise {
   position: fixed;

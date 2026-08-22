@@ -18,7 +18,7 @@ export default function About() {
       <section className="page-split">
         <Reveal className="page-media">
           <div className="portrait-wrapper">
-            <img src={portrait} alt="Sol'o Mon portrait" />
+            <img src={portrait} alt="Sol'o Mon portrait" loading="lazy" decoding="async" />
           </div>
         </Reveal>
         <div className="page-copy">

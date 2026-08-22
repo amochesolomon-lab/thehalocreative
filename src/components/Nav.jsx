@@ -36,9 +36,12 @@ export default function Nav() {
     <header className={`site-nav ${open ? "menu-open" : ""}`}>
       <NavLink to="/" className="brand" aria-label="Home">
         <img
-          src="/assets/pics/logo.png"
+          src="/assets/pics/logo.webp"
           alt="Sol'o Mon"
           className="brand-logo"
+          width={36}
+          height={36}
+          decoding="async"
         />
       </NavLink>
 

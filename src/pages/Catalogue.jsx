@@ -67,6 +67,7 @@ export default function Catalogue() {
                     alt={item.title}
                     className="album-cover"
                     loading="lazy"
+                    decoding="async"
                   />
                   <div className="album-hover-overlay">
                     <span className="stream-cta-text">View Gallery →</span>

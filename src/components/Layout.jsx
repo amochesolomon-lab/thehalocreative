@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { Outlet, useLocation } from 'react-router-dom';
 import Nav from './Nav';
@@ -51,7 +51,9 @@ export default function Layout() {
           exit={reducedMotion ? undefined : { opacity: 0, scale: 1.01, y: -8 }}
           transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
         >
-          <Outlet />
+          <Suspense fallback={<div className="route-loading" aria-hidden="true" />}>
+            <Outlet />
+          </Suspense>
         </motion.main>
       </AnimatePresence>
 

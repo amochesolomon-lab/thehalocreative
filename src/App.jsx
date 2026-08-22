@@ -1,12 +1,14 @@
+import { lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
-import Home from './pages/Home';
-import Catalogue from './pages/Catalogue';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Signal from './pages/Signal';
 import SmoothScroll from './components/SmoothScroll';
 import AudioPlayer from './components/AudioPlayer';
+
+const Home = lazy(() => import('./pages/Home'));
+const Catalogue = lazy(() => import('./pages/Catalogue'));
+const About = lazy(() => import('./pages/About'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Signal = lazy(() => import('./pages/Signal'));
 
 export default function App() {
   return (
