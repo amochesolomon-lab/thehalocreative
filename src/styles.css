@@ -532,7 +532,7 @@ button, input, textarea {
   width: 100%;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 80px;
   padding: 0 50px;
   z-index: 10;
@@ -549,8 +549,8 @@ button, input, textarea {
 }
 
 .merch-block {
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+  text-align: center;
 }
 
 .home-hover-link {

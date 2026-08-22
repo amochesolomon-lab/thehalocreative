@@ -66,18 +66,6 @@ export default function Home() {
           </Link>
         </motion.div>
 
-        {/* Right Link - The Creative Signal */}
-        <motion.div
-          className="home-hover-block merch-block"
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <Link to="/signal" className="home-hover-link">
-            <span className="subtitle"></span>
-            <h2 className="title"></h2>
-          </Link>
-        </motion.div>
       </div>
 
       {/* Subtle brand caption */}
